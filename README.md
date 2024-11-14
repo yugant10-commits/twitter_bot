@@ -8,7 +8,7 @@ Making chatbots better.
 ```pip install -r requirements.txt```
 
 3. Export the OPENAI API key to your os environment. 
-```export OPENAPI_KEY = "YOUR KEY HERE"```
+```export OPENAI_API_KEY = "YOUR KEY HERE"```
 4. Run the following code from your terminal.
 ```streamlit run main.py``` 
 5. If you want to serve the model locally and the project. Please follow the steps mentioned below.

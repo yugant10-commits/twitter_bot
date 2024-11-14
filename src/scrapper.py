@@ -67,7 +67,6 @@ class ScrapeWebPage:
                 
             urls = list(set(urls))
             urls = list(filter(None, urls))
-            print(urls)
             return urls, base_url
             
         except Exception as e:
@@ -104,7 +103,6 @@ class ScrapeWebPage:
                     "text": cleaned_text,
                     "source": link
                 })
-                print(f"filtered: {filtered_text}")
             except Exception as e:
                 print(f"Error processing {link}: {e}")
                 continue

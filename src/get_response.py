@@ -64,10 +64,10 @@ class ResponseLLM:
     def _generate(self):
         """Call out to OpenAI's endpoint."""
   
-        if len(os.environ["OPENAPI_KEY"])>0:
+        if len(os.environ["OPENAI_API_KEY"])>0:
 
 
-            openai.api_key = os.environ["OPENAPI_KEY"]
+            openai.api_key = os.environ["OPENAI_API_KEY"]
             response = openai.chat.completions.create(
                                         model="gpt-4o",
                                         messages=[
@@ -82,10 +82,10 @@ class ResponseLLM:
     def generate_markdown(self):
         """Call out to OpenAI's endpoint."""
   
-        if len(os.environ["OPENAPI_KEY"])>0:
+        if len(os.environ["OPENAI_API_KEY"])>0:
 
 
-            openai.api_key = os.environ["OPENAPI_KEY"]
+            openai.api_key = os.environ["OPENAI_API_KEY"]
             response = openai.chat.completions.create(
                                         model="gpt-3.5-turbo",
                                         messages=[

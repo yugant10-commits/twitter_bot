@@ -59,7 +59,7 @@ def scrape_url(url):
     url_scrapper = ScrapeWebPage(url)
     # url_list, base_url = url_scrapper.get_url()
     # processed_url = url_scrapper.process_urls(url_list=url_list, base_url=base_url)
-    links = file_to_list(file_path="/home/yg/Documents/twitter-bot/chat-web/raw-links.txt")
+    links = file_to_list(file_path="./raw-links.txt")
     content = url_scrapper.get_page_contents(url_list = set(links))
     vector_obj = VectorSearch(data=content, model_name="text-embedding-3-large")
     start_time = time.time()
